@@ -24,6 +24,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "enzyme-adapter-react-16": "^1.11.2"
+    "enzyme-adapter-react-16": "^1.11.2",
+    "prettier": "^1.16.4"
   }
 }
