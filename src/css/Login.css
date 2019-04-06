@@ -1,0 +1,22 @@
+.logIn {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 350px;
+}
+
+.userInputs {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.userInputs label {
+  margin: 0.2rem 0;
+  width: 80%;
+}
+
+.userInputs input {
+}
