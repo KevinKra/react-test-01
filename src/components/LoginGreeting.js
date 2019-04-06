@@ -1,15 +1,22 @@
 import React from "react";
-
 class Greeting extends React.Component {
   constructor() {
     super();
   }
   render() {
-    return (
-      <div>
-        <p>Please Log in</p>
-      </div>
-    );
+    if (this.props.currentUserName.length > 0) {
+      return (
+        <div>
+          <p>Welcome, {this.props.currentUserName}.</p>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <p>Please Log in</p>
+        </div>
+      );
+    }
   }
 }
 
