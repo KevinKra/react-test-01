@@ -1,8 +1,10 @@
 import React from "react";
+
 class Greeting extends React.Component {
   constructor() {
     super();
   }
+
   render() {
     if (this.props.currentUserName.length > 0) {
       return (

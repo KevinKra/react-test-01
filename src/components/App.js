@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import "../css/App.css";
 import Login from "./Login";
+import PropTypes from "prop-types";
+import "../css/App.css";
 
 const Title = ({ text }) => <div>{text}</div>;
 
@@ -11,6 +12,11 @@ class App extends Component {
       userName: ""
     };
   }
+
+  // keep working on utilizing propTypes
+  static propTypes = {
+    userName: PropTypes.string.isRequired
+  };
 
   updateUserName = e => {
     this.setState({
