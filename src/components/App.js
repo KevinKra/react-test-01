@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Login from "./Login";
+import Clock from "./Clock";
 import PropTypes from "prop-types";
 import "../css/App.css";
 
@@ -32,6 +33,7 @@ class App extends Component {
           <p>
             The intention of this file is to practice various React features
           </p>
+          <Clock />
         </section>
         <section>
           <Login
