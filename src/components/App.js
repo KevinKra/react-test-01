@@ -8,9 +8,16 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      userName: null
+      userName: ""
     };
   }
+
+  updateUserName = e => {
+    this.setState({
+      userName: e.target.value
+    });
+  };
+
   render() {
     return (
       <div className="mainSection">
@@ -21,7 +28,10 @@ class App extends Component {
           </p>
         </section>
         <section>
-          <Login userName={this.state.userName} />
+          <Login
+            updateUserName={this.updateUserName}
+            currentUserName={this.state.userName}
+          />
         </section>
       </div>
     );
