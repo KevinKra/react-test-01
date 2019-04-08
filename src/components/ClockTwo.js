@@ -10,6 +10,8 @@ class ClockTwo extends React.Component {
   }
 
   tick = () => {
+    //Every second the browser calls the tick() method. Inside it, the Clock component schedules a UI update by calling setState() with an object containing the current time.
+    //Thanks to the setState() call, React knows the state has changed, and calls the render() method again to learn what should be on the screen
     this.setState({ time: new Date() });
   };
 
