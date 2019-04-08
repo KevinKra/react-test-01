@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Login from "./Login";
 import Clock from "./Clock";
+import ClockTwo from "./ClockTwo";
 import PropTypes from "prop-types";
 import EventTracker from "./EventTracker";
 import "../css/App.css";
@@ -38,6 +39,7 @@ class App extends Component {
           </p>
           <p>Current counter: {this.state.totalCount}</p>
           <Clock />
+          <ClockTwo />
         </section>
         <section>
           <Login
